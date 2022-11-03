@@ -9,5 +9,8 @@ insert into EmployeePaayroll values ('Vivek',46000,'2020-01-01')
 select * from EmployeePaayroll
 --UC-5 
 select * from EmployeePaayroll where Startdate between CAST('2018-01-01' As date) and getdate()
+alter table EmployeePayroll add Gender char(1)
+update EmployeePayroll set Gender='M' Where Empname='vivek'
+update EmployeePayroll set Gender='M' Where Empname='charlie'
 
 
